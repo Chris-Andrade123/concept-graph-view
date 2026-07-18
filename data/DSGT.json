@@ -1,0 +1,18 @@
+{
+  "subject": "Discrete Structures and Graph Theory",
+  "short": "DSGT",
+  "nodes": [
+    {
+      "id": "graph-coloring",
+      "name": "Graph Coloring",
+      "definition": "",
+      "connections": [],
+      "recommended_connections": [],
+      "confidence": 0,
+      "last_reviewed": null,
+      "times_reviewed": 0,
+      "date_created": "2026-07-18",
+      "last_question_asked": "Suppose you are tasked with scheduling a series of final exams such that no student has two exams at the same time; how would you represent this scenario as a graph, and what specific property of that graph would represent the minimum number of time slots required?"
+    }
+  ]
+}
