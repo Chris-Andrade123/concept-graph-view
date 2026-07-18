@@ -12,7 +12,7 @@
       "last_reviewed": null,
       "times_reviewed": 0,
       "date_created": "2026-07-18",
-      "last_question_asked": "If you were designing an algorithm to find the longest path in a directed acyclic graph, why would a greedy approach fail, and how specifically does the \"overlapping subproblems\" property of dynamic programming provide the mechanism to guarantee an optimal solution?"
+      "last_question_asked": "If you were tasked with finding the shortest path in a graph, how would you determine if the problem exhibits the overlapping subproblems property necessary for dynamic programming, and how might this property distinguish your approach from a greedy algorithm?"
     }
   ]
 }
