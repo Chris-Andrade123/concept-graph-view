@@ -1,0 +1,280 @@
+:root {
+  --bg: #14171C;
+  --paper: #E8E3D8;
+  --paper-dim: #9A968C;
+  --pine: #4A7C6F;
+  --pine-bright: #6FA695;
+  --amber: #C97D4A;
+  --amber-bright: #E0985F;
+  --slate: #5B6472;
+  --border: #2A2E36;
+  --card: #1B1F26;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--paper);
+  font-family: 'IBM Plex Mono', monospace;
+  min-height: 100vh;
+}
+
+.app-header {
+  padding: 24px 20px 12px;
+}
+
+.app-title {
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: 28px;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.app-subtitle {
+  font-size: 12px;
+  color: var(--paper-dim);
+  margin: 4px 0 0;
+}
+
+.subject-tabs {
+  display: flex;
+  gap: 8px;
+  padding: 0 20px 16px;
+  overflow-x: auto;
+}
+
+.tab {
+  background: transparent;
+  border: 0.5px solid var(--border);
+  color: var(--paper-dim);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.tab:hover {
+  border-color: var(--pine);
+  color: var(--paper);
+}
+
+.tab.active {
+  background: var(--pine);
+  border-color: var(--pine);
+  color: var(--bg);
+  font-weight: 500;
+}
+
+.graph-area {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 200px);
+  min-height: 400px;
+}
+
+#graph-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.empty-state {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0 32px;
+}
+
+.empty-title {
+  font-family: 'Fraunces', serif;
+  font-size: 20px;
+  margin: 0 0 8px;
+  color: var(--paper);
+}
+
+.empty-body {
+  font-size: 13px;
+  color: var(--paper-dim);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.node-circle {
+  cursor: pointer;
+  stroke-width: 1.5px;
+}
+
+.node-circle--weak {
+  fill: var(--amber);
+  stroke: var(--amber-bright);
+}
+
+.node-circle--mid {
+  fill: #8A7A5C;
+  stroke: #A6926A;
+}
+
+.node-circle--strong {
+  fill: var(--pine);
+  stroke: var(--pine-bright);
+}
+
+.node-circle--pulse {
+  animation: pulse 2.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .node-circle--pulse {
+    animation: none;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.55; }
+}
+
+.node-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  fill: var(--paper);
+  pointer-events: none;
+  text-anchor: middle;
+}
+
+.node-label-bg {
+  fill: var(--bg);
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+.edge-confirmed {
+  stroke: var(--pine-bright);
+  stroke-width: 1.5px;
+  fill: none;
+}
+
+.edge-recommended {
+  stroke: var(--slate);
+  stroke-width: 1px;
+  stroke-dasharray: 3 3;
+  fill: none;
+}
+
+.node-detail {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--card);
+  border-top: 0.5px solid var(--border);
+  padding: 20px;
+  max-height: 45vh;
+  overflow-y: auto;
+  border-radius: 16px 16px 0 0;
+}
+
+.detail-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  color: var(--paper-dim);
+  font-size: 22px;
+  cursor: pointer;
+  line-height: 1;
+  padding: 4px 8px;
+}
+
+.detail-name {
+  font-family: 'Fraunces', serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 32px 4px 0;
+  color: var(--paper);
+}
+
+.detail-confidence {
+  font-size: 12px;
+  color: var(--pine-bright);
+  margin: 0 0 12px;
+}
+
+.detail-definition {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 0 16px;
+  color: var(--paper);
+}
+
+.detail-connections {
+  font-size: 13px;
+}
+
+.connection-item {
+  padding: 8px 0;
+  border-top: 0.5px solid var(--border);
+  line-height: 1.5;
+}
+
+.connection-item:first-child {
+  border-top: none;
+}
+
+.connection-item--recommended {
+  color: var(--paper-dim);
+  font-style: italic;
+}
+
+.connection-arrow {
+  color: var(--pine-bright);
+  margin-right: 6px;
+}
+
+.legend {
+  display: flex;
+  gap: 20px;
+  padding: 16px 20px;
+  font-size: 11px;
+  color: var(--paper-dim);
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.legend-dot--weak {
+  background: var(--amber);
+}
+
+.legend-dot--strong {
+  background: var(--pine);
+}
+
+.legend-line {
+  width: 16px;
+  height: 0;
+  display: inline-block;
+  border-top: 1.5px solid var(--pine-bright);
+}

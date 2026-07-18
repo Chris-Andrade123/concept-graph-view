@@ -1,0 +1,18 @@
+{
+  "subject": "Analysis of Algorithms",
+  "short": "AOA",
+  "nodes": [
+    {
+      "id": "dynamic-programming",
+      "name": "Dynamic Programming",
+      "definition": "A technique for solving problems by breaking them into overlapping subproblems.",
+      "connections": [],
+      "recommended_connections": [],
+      "confidence": 0,
+      "last_reviewed": null,
+      "times_reviewed": 0,
+      "date_created": "2026-07-18",
+      "last_question_asked": null
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Concept graph</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="graph.css">
+</head>
+<body>
+
+<header class="app-header">
+  <h1 class="app-title">Concept graph</h1>
+  <p class="app-subtitle" id="last-updated">—</p>
+</header>
+
+<nav class="subject-tabs" id="subject-tabs">
+  <button class="tab" data-subject="AOA">AOA</button>
+  <button class="tab" data-subject="DBMS">DBMS</button>
+  <button class="tab" data-subject="COA">COA</button>
+  <button class="tab" data-subject="DSGT">DSGT</button>
+</nav>
+
+<main class="graph-area">
+  <svg id="graph-svg"></svg>
+  <div class="empty-state" id="empty-state" hidden>
+    <p class="empty-title">No topics yet</p>
+    <p class="empty-body">Email a topic in with subject "[SHORT] Topic name" to get started.</p>
+  </div>
+</main>
+
+<div class="node-detail" id="node-detail" hidden>
+  <button class="detail-close" id="detail-close" aria-label="Close">&times;</button>
+  <p class="detail-name" id="detail-name"></p>
+  <p class="detail-confidence" id="detail-confidence"></p>
+  <p class="detail-definition" id="detail-definition"></p>
+  <div class="detail-connections" id="detail-connections"></div>
+</div>
+
+<footer class="legend">
+  <div class="legend-item"><span class="legend-dot legend-dot--weak"></span>Low confidence</div>
+  <div class="legend-item"><span class="legend-dot legend-dot--strong"></span>High confidence</div>
+  <div class="legend-item"><span class="legend-line legend-line--solid"></span>Confirmed connection</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="graph.js"></script>
+</body>
+</html>
