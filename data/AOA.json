@@ -6,11 +6,18 @@
       "id": "dynamic-programming",
       "name": "Dynamic Programming",
       "definition": "A technique for solving problems by breaking them into overlapping subproblems.",
-      "connections": [],
+      "connections": [
+        {
+          "to": "recursion",
+          "relation": "DP is just recursion where we",
+          "confirmed_by_gemini": true,
+          "date_added": "2026-07-18"
+        }
+      ],
       "recommended_connections": [],
-      "confidence": 0,
-      "last_reviewed": null,
-      "times_reviewed": 0,
+      "confidence": 15,
+      "last_reviewed": "2026-07-18",
+      "times_reviewed": 1,
       "date_created": "2026-07-18",
       "last_question_asked": "If you were tasked with finding the shortest path in a graph, how would you determine if the problem exhibits the overlapping subproblems property necessary for dynamic programming, and how might this property distinguish your approach from a greedy algorithm?"
     }
