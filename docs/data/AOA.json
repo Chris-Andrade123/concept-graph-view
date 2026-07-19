@@ -1,5 +1,18 @@
 {
-     "subject": "Analysis of Algorithms",
-     "short": "AOA",
-     "nodes": []
-   }
+  "subject": "Analysis of Algorithms",
+  "short": "AOA",
+  "nodes": [
+    {
+      "id": "time-complexity",
+      "name": "Time Complexity",
+      "definition": "It is a type of analysis to determine the approximate time required by an\r\nalgorithm to complete a given task when the number of inputs increases.",
+      "connections": [],
+      "recommended_connections": [],
+      "confidence": 0,
+      "last_reviewed": null,
+      "last_question_asked": null,
+      "times_reviewed": 0,
+      "date_created": "2026-07-19"
+    }
+  ]
+}
