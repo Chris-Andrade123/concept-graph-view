@@ -8,11 +8,11 @@
       "definition": "",
       "connections": [],
       "recommended_connections": [],
-      "confidence": 0,
-      "last_reviewed": null,
-      "times_reviewed": 0,
+      "confidence": 15,
+      "last_reviewed": "2026-07-18",
+      "times_reviewed": 1,
       "date_created": "2026-07-18",
-      "last_question_asked": null
+      "last_question_asked": "Given a map of countries that share borders, how would you model this scenario as a graph to determine the minimum number of colors required so that no two adjacent countries share the same color, and what specific graph property must hold for this to be possible with only two colors?"
     }
   ]
 }

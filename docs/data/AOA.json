@@ -6,13 +6,20 @@
       "id": "dynamic-programming",
       "name": "Dynamic Programming",
       "definition": "A technique for solving problems by breaking them into overlapping subproblems.",
-      "connections": [],
+      "connections": [
+        {
+          "to": "recursion",
+          "relation": "DP is just recursion where we",
+          "confirmed_by_gemini": true,
+          "date_added": "2026-07-18"
+        }
+      ],
       "recommended_connections": [],
-      "confidence": 0,
-      "last_reviewed": null,
-      "times_reviewed": 0,
+      "confidence": 15,
+      "last_reviewed": "2026-07-18",
+      "times_reviewed": 1,
       "date_created": "2026-07-18",
-      "last_question_asked": null
+      "last_question_asked": "If you were tasked with finding the nth Fibonacci number, how would the execution flow and performance characteristics of a standard recursive implementation differ from one that utilizes memoization, and what does this reveal about the relationship between recursion and the overlapping subproblems inherent in dynamic programming?"
     }
   ]
 }
