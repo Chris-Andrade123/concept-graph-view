@@ -19,7 +19,7 @@
       "last_reviewed": "2026-07-18",
       "times_reviewed": 1,
       "date_created": "2026-07-18",
-      "last_question_asked": "If you were tasked with finding the shortest path in a graph, how would you determine if the problem exhibits the overlapping subproblems property necessary for dynamic programming, and how might this property distinguish your approach from a greedy algorithm?"
+      "last_question_asked": "If you are solving a problem using recursion that features overlapping subproblems, how does the transition to dynamic programming alter the time complexity of the algorithm, and what specific trade-off in resource management makes this improvement possible?"
     }
   ]
 }

@@ -12,7 +12,7 @@
       "last_reviewed": "2026-07-18",
       "times_reviewed": 1,
       "date_created": "2026-07-18",
-      "last_question_asked": "If you were tasked with scheduling final exams for a university such that no student has two exams at the same time, how would you represent the courses and student enrollments as a graph, and what specific property of the graph's coloring would determine the minimum number of exam time slots required?"
+      "last_question_asked": "If you were tasked with scheduling final exams for a university such that no two courses with overlapping student enrollments are held at the same time, how would you map the components of this scenario to the vertices and edges of a graph, and what does the chromatic number of that graph represent in this context?"
     }
   ]
 }
