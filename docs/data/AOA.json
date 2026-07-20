@@ -10,7 +10,7 @@
       "recommended_connections": [],
       "confidence": 0,
       "last_reviewed": null,
-      "last_question_asked": null,
+      "last_question_asked": "If an algorithm performs a task in O(n) time, how would the execution time change if the input size were quadrupled, and what does this relationship suggest about the algorithm's efficiency compared to one with O(n²) complexity?",
       "times_reviewed": 0,
       "date_created": "2026-07-19"
     },
@@ -22,7 +22,7 @@
       "recommended_connections": [],
       "confidence": 0,
       "last_reviewed": null,
-      "last_question_asked": null,
+      "last_question_asked": "If you were tasked with designing a search algorithm for a massive, unsorted dataset, how would the growth rate of a linear search change your approach compared to a scenario where you could pre-process the data into a sorted structure?",
       "times_reviewed": 0,
       "date_created": "2026-07-19"
     }
