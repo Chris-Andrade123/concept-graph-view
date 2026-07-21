@@ -10,7 +10,7 @@
       "recommended_connections": [],
       "confidence": 0,
       "last_reviewed": null,
-      "last_question_asked": "If an algorithm performs a task in O(n) time, how would the execution time change if the input size were quadrupled, and what does this relationship suggest about the algorithm's efficiency compared to one with O(n²) complexity?",
+      "last_question_asked": "If an algorithm has a time complexity of O(n) and you decide to optimize it to O(log n), how would you expect the execution time to change as the input size grows significantly, and what does this shift imply about the underlying design of the algorithm?",
       "times_reviewed": 0,
       "date_created": "2026-07-19"
     },
@@ -22,7 +22,7 @@
       "recommended_connections": [],
       "confidence": 0,
       "last_reviewed": null,
-      "last_question_asked": "If you were tasked with designing a search algorithm for a massive, unsorted dataset, how would the growth rate of a linear search change your approach compared to a scenario where you could pre-process the data into a sorted structure?",
+      "last_question_asked": "If you have two different algorithms that both solve the same problem, why might an algorithm with a higher Big O complexity still be preferable to one with a lower complexity in a real-world computing environment?",
       "times_reviewed": 0,
       "date_created": "2026-07-19"
     }
