@@ -10,7 +10,7 @@
       "recommended_connections": [],
       "confidence": 0,
       "last_reviewed": null,
-      "last_question_asked": "If an algorithm has a time complexity of O(n) and you decide to optimize it to O(log n), how would you expect the execution time to change as the input size grows significantly, and what does this shift imply about the underlying design of the algorithm?",
+      "last_question_asked": "If you were to implement a search algorithm that performs a linear scan through a dataset, how would the time complexity change if you instead utilized a hash table, and what does this shift imply about the relationship between data organization and computational efficiency?",
       "times_reviewed": 0,
       "date_created": "2026-07-19"
     },
@@ -22,7 +22,7 @@
       "recommended_connections": [],
       "confidence": 0,
       "last_reviewed": null,
-      "last_question_asked": "If you have two different algorithms that both solve the same problem, why might an algorithm with a higher Big O complexity still be preferable to one with a lower complexity in a real-world computing environment?",
+      "last_question_asked": "If you were designing an algorithm to process a massive dataset, why might choosing an implementation with a \"better\" Big O complexity sometimes lead to slower actual performance than a \"worse\" one, and what specific factors about the hardware or the nature of your input might cause this discrepancy?",
       "times_reviewed": 0,
       "date_created": "2026-07-19"
     }
