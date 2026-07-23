@@ -10,7 +10,7 @@
       "recommended_connections": [],
       "confidence": 0,
       "last_reviewed": null,
-      "last_question_asked": "If you were to implement a search algorithm that performs a linear scan through a dataset, how would the time complexity change if you instead utilized a hash table, and what does this shift imply about the relationship between data organization and computational efficiency?",
+      "last_question_asked": "If you were tasked with designing an algorithm that must handle a dataset that doubles in size every hour, how would the difference between linear and quadratic time complexity impact the long-term feasibility of your system's performance?",
       "times_reviewed": 0,
       "date_created": "2026-07-19"
     },
@@ -22,7 +22,7 @@
       "recommended_connections": [],
       "confidence": 0,
       "last_reviewed": null,
-      "last_question_asked": "If you were designing an algorithm to process a massive dataset, why might choosing an implementation with a \"better\" Big O complexity sometimes lead to slower actual performance than a \"worse\" one, and what specific factors about the hardware or the nature of your input might cause this discrepancy?",
+      "last_question_asked": "If you were tasked with designing an algorithm to search for a specific value in a dataset, how would the Big O complexity of that search change if you transitioned from an unsorted list to a sorted one, and what does this imply about the relationship between data organization and algorithm efficiency?",
       "times_reviewed": 0,
       "date_created": "2026-07-19"
     }
