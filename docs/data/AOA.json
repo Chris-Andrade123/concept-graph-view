@@ -10,7 +10,7 @@
       "recommended_connections": [],
       "confidence": 0,
       "last_reviewed": null,
-      "last_question_asked": "If you were tasked with designing an algorithm that must handle a dataset that doubles in size every hour, how would the difference between linear and quadratic time complexity impact the long-term feasibility of your system's performance?",
+      "last_question_asked": "If an algorithm performs a task in O(n) time, how would the execution time change if the input size were quadrupled, and what does this relationship suggest about the algorithm's efficiency compared to one that operates in O(log n) time?",
       "times_reviewed": 0,
       "date_created": "2026-07-19"
     },
@@ -22,7 +22,7 @@
       "recommended_connections": [],
       "confidence": 0,
       "last_reviewed": null,
-      "last_question_asked": "If you were tasked with designing an algorithm to search for a specific value in a dataset, how would the Big O complexity of that search change if you transitioned from an unsorted list to a sorted one, and what does this imply about the relationship between data organization and algorithm efficiency?",
+      "last_question_asked": "If you were tasked with selecting an algorithm for a system that processes real-time data, why might choosing an algorithm based solely on its Big O worst-case complexity lead to inefficient performance in practice, and what other factors might you need to consider?",
       "times_reviewed": 0,
       "date_created": "2026-07-19"
     }
